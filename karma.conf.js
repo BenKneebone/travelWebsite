@@ -22,6 +22,11 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
+    files:[
+      {pattern: './src/assets/jquery-1.8.2.js', watched: false},
+      {pattern: './src/assets/jquery-jvectormap.min.js', watched: false},
+      {pattern: './src/assets/jquery-jvectormap-world-mill-en.js', watched: false}
+    ],
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
